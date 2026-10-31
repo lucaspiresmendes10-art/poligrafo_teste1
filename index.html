@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polígrafo Digital</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="container">
+
+        <header>
+            <p class="subtitulo">SISTEMA DE INVESTIGAÇÃO</p>
+            <h1>TESTE DO POLÍGRAFO></h1>
+            <p>Responda às perguntas e descubra o resultado da análise.</p>
+        </header>
+
+        <section id="inicio" class="painel">
+            <div class="icone">⌕</div>
+            <h2>Iniciar interrogatório</h2>
+            <p>Você responderá a 10 perguntas com Sim ou Não.</p>
+            <button onclick="iniciarTeste()">Iniciar teste</button>
+        </section>
+
+        <section id="perguntas" class="painel escondido">
+
+            <p id="progresso">Pergunta 1 de 10</p>
+
+            <div class="barra">
+                <div id="progressoBarra"></div>
+            </div>
+
+            <h2 id="numeroPergunta">PERGUNTA 01</h2>
+
+            <p id="textoPergunta" class="pergunta"></p>
+
+            <div class="botoes">
+                <button onclick="responder('sim')" class="sim">
+                    Sim
+                </button>
+
+                <button onclick="responder('nao')" class="nao">
+                    Não
+                </button>
+            </div>
+
+        </section>
+
+        <section id="resultado" class="painel escondido">
+            <p class="subtitulo">ANÁLISE CONCLUÍDA</p>
+            <h2>Resultado do teste</h2>
+
+            <p class="contador">
+                Respostas Sim:
+                <strong id="quantidadeSim">0</strong>/10
+            </p>
+
+            <h3 id="classificacao"></h3>
+            <p id="mensagem"></p>
+
+            <button onclick="reiniciarTeste()">
+                Refazer teste
+            </button>
+        </section>
+
+        <footer>
+            Projeto educativo de JavaScript
+        </footer>
+
+    </main>
+
+</body>
+</html>

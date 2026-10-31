@@ -1,0 +1,187 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #101014;
+    color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+.subtitulo {
+    color: #ff4444;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+h1 span {
+    color: #ff4444;
+}
+
+header > p:last-child {
+    color: #b5b5b5;
+    line-height: 1.6;
+}
+
+.painel {
+    background-color: #1b1b22;
+    border: 1px solid #383840;
+    border-radius: 12px;
+    padding: 35px 25px;
+}
+
+.painel h2 {
+    margin-bottom: 20px;
+}
+
+.painel p {
+    line-height: 1.6;
+}
+
+.icone {
+    font-size: 55px;
+    color: #ff4444;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #e83232;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 14px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #ff5555;
+    transform: scale(1.03);
+}
+
+.painel > button {
+    margin-top: 25px;
+}
+
+#progresso {
+    color: #ff5555;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.barra {
+    background-color: #383840;
+    height: 7px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+#progressoBarra {
+    background-color: #ff4444;
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s;
+}
+
+#numeroPergunta {
+    color: #ff5555;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.pergunta {
+    font-size: 21px;
+    min-height: 65px;
+    margin-bottom: 25px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.botoes button {
+    width: 130px;
+}
+
+.sim {
+    background-color: #b52b2b;
+}
+
+.nao {
+    background-color: #383840;
+}
+
+.contador {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+#quantidadeSim {
+    color: #ff5555;
+    font-size: 28px;
+}
+
+#classificacao {
+    color: #ff5555;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+#mensagem {
+    color: #cccccc;
+}
+
+.escondido {
+    display: none;
+}
+
+footer {
+    margin-top: 25px;
+    color: #777780;
+    font-size: 12px;
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    .painel {
+        padding: 25px 18px;
+    }
+
+    .pergunta {
+        font-size: 18px;
+    }
+}
